@@ -6,7 +6,7 @@ import '../css/style.css';
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
-const loadSpinner = () => {
+const loadSpinner = ('load', function ()  {
   const spinner = document.createElement('div');
   spinner.classList.add('spinner');
   spinner.innerHTML = `
@@ -15,7 +15,7 @@ const loadSpinner = () => {
   </div>
   `;
   main.appendChild(spinner);
-};
+});
 
 const editor = new Editor();
 
